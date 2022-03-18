@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url("base.css");
+
+#headerImg_container{
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 30px;
+  padding: 120px 15% 20px;
+  background-image: url("/images/header/theme_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title{
+  font-size: 4.5em;
+}
+
+.extraBigLetter{
+  font-size: 2em;
+}

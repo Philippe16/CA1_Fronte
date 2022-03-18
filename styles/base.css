@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*--------------------------------- Global variables --------------------------------*/
+:root{
+	/* Colors */
+	--black: #000000;
+  --white: #ffffff;
+  --darkBlue: #0e0c57;
+  --purple: #df0bb5;
+}
+/*------------------------------- Global variables END ------------------------------*/
+
+
+/*-------------------------------------- Fonts --------------------------------------*/
+@font-face{
+  font-family: Oswarld_regular;
+  src: url("/fonts/Oswald/static/Oswald-Regular.ttf");
+}
+
+@font-face{
+  font-family: Roboto_regular;
+  src: url("/fonts/Roboto/Roboto-Regular.ttf");
+}
+/*------------------------------------ Fonts END ------------------------------------*/
+
+
+/*-------------------------------- Set default stuff --------------------------------*/
+html{
+	overflow-y: scroll;
+  overflow-x: hidden;
+  -moz-scrollbars: vertical;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  min-height: 800px;
+  padding-bottom: 30px;
+  background-color: var(--darkBlue);
+}
+
+#wrapper{
+	max-width: 1900px;
+	margin: 0 auto;
+  font-family: Roboto_regular;
+  color: var(--white);
+}
+
+h1, h2, h3{
+  font-weight: normal;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:visited{
+  color: var(--white);
+}
+
+p{
+  padding-bottom: .5em;
+}
+
+h1{
+  font-family: Oswarld_regular;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:focus, input:focus{
+  outline: none;
+}
+
+img, video{
+  width: 100%;
+  text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--black);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--black);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--black);
+}
+/*------------------------------ Set default stuff END ------------------------------*/
+
+/*----------------------------------- Common classes --------------------------------*/
+.absolute_element_centered{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  /*Add an element height on the specific element*/
+}
+
+.flexRow{
+	display: flex;
+	flex-direction: row;
+}
+
+.flexColumn{
+	display: flex;
+	flex-direction: column;
+}
+
+.posAbsolute{
+  position: absolute;
+}
+
+.posRelative{
+  position: relative;
+}
+
+.posSticky{
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+}
+/*--------------------------------- Common classes END ------------------------------*/

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url("base.css");
+
+#zipHobBtn_container{
+  padding: 0 30%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.zipHob_button{
+  width: 200px;
+  height: 50px;
+  font-size: 1em;
+}
+
+#zipList_container{
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.zip_container{
+  padding: 0 5px;
+}
+
+#hobbyList_table{
+  margin: 0 auto;
+  border: 1px var(--white) solid;
+  border-collapse: collapse;
+}
+
+#hobbyList_table th, #hobbyList_table td{
+  width: 350px;
+  padding: 10px;
+  border: 1px var(--white) solid;
+}
+
+#hobbyList_table tr th:nth-child(1), #hobbyList_table tr td:nth-child(1){
+  width: 80px;
+}
+
+
+
+
